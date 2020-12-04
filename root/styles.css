@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*end of Eric Meyers Reset*/
+
+/*  Default Styles | Mobile First */
+
+/* *****************************************************
+*			UNIVERSAL TAGS
+***************************************************** */
+
+      body {
+      background: black;
+      padding: 1rem;
+    }
+    
+    #wrapper {
+      color: black;
+      max-width: 1000px;
+      background-image: url("images/white-waves.png");
+      padding: 1rem;
+      margin: 0 auto;
+    }
+
+/* ****************************************************
+*          HEADER
+*************************************************** */
+
+
+
+       header h1 {
+           color: black;
+           font-weight: bold;
+           text-align: center;
+           font-size: 1.25rem;
+       }
+
+       header h1 span {
+         display: block;
+         font-size: 1rem;
+         font-style: italic;
+         padding: 0.25rem;
+       }
+
+       header nav {
+         border-top: solid black 1px;
+         border-bottom: solid black 1px;
+         padding: 0.25rem;
+         margin: 1rem;
+       }
+
+       #list {
+         display: flex;
+         justify-content: center;
+       }
+
+       #list a {
+         text-decoration: none;
+         color: black;
+         /* border-right: solid black 1px; */
+         padding: 0.25rem 2.5rem;
+       }
+
+       #list a:active, #list a:hover {
+         color: green;
+       }
+
+
+/* ******************************************************
+*       MAIN
+***************************************************** */
+
+main {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+main h1 {
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+  /* text-decoration: underline; */
+
+}
+
+main p {
+
+  padding: 0.5rem;
+
+}
+
+span {
+
+  font-style: italic;
+
+}
+
+
+    #container {
+        background-image: url("images/double-bubble-dark.png");
+        text-align: center;
+        /* width: 500;
+        height: 350; */
+        margin: 0  auto;
+        /* display: inline-block; */
+        width: 75%;
+        /* max-width: 1000px; */
+        padding: 1rem;
+        border: double gold 5px;
+    }
+
+    #instructions li {
+
+      padding: 0.5rem;
+    }
+
+    h2 {
+
+      font-size: 1.125rem;
+      font-weight: bold;
+      padding: 1rem;
+    }
+
+    #signIn header {
+
+      border-bottom: solid black 1px;
+      padding: 1rem;
+    }
+
+    #signIn #container {
+        margin: 5rem auto 5rem auto;
+      padding: 1rem;
+    }
+
+    video {
+        background: grey;
+        margin: 1rem;
+        border: solid white 5px;
+        width: 80%;
+    }
+
+    input {
+        background-color: white;
+        color: black;
+        padding: 0.25rem;
+        margin: 0.25rem;
+        border: solid grey 3px;
+        border-radius: 5px;
+  
+    }
+
+    #inputs {
+      display: flex;
+      justify-content: center;
+    }
+    /* #video {
+        width: 80%;
+    } */
+
+    button {
+        background-color: grey;
+        color: white;
+        padding: 0.25rem;
+        border: solid white 2px;
+        margin: 0.25rem;
+        border-radius: 10px;
+        /* height: 1.5rem; */
+    }
+
+    button:hover, button:active {
+      color: green;
+      border-color: green;
+      background-color: white;
+    }
+
+
+     /* The Modal (background) */
+     .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        /* background-color: rgb(0,0,0); /* Fallback color */
+        /* background-color: rgba(0,0,0,0.4); Black w/ opacity  */
+        
+        
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        /* border: 1px solid #888; */
+        width: 80%;
+        border-radius: 10px;
+        border: solid red 5px;
+        /* outline: black 2px; */
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal p {
+        color: black;
+        text-align: center;
+      }
+
+     
+    
+
+        /*  Main tags go here   */
+
+
+/* *****************************************************
+*       FOOTER
+***************************************************** */
+
+/* footer {
+  border-top: solid black 1px;
+} */
+
+#ptime {
+
+  text-align: center;
+  padding: 1rem;
+}
+
+footer nav {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  padding: 0.25rem;
+  margin: 1rem;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: black;
+  /* border-right: solid black 1px; */
+  padding: 0.25rem 2.5rem;
+}
+
+footer nav ul a:active, footer nav ul a:hover {
+  color: green;
+}
+        /*  Footer tags go here */
+
+
+/*  End of Default Styles | Mobile First  */
+
+
+
+
